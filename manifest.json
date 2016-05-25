@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a will output a ruby script that will post to a specified location",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "fileSystem",
+    "contextMenus"
+  ]
+  ,
+  "background": {
+    "scripts":["script.js"]
+  }
+}
